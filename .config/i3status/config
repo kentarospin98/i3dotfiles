@@ -1,0 +1,24 @@
+general {
+        output_format = "i3bar"
+        colors = true
+        interval = 1
+}
+
+order += "battery 0"
+order += "tztime local"
+
+
+battery 0 {
+        format = "%status %percentage "
+        format_down = "No battery"
+        status_chr = " Charging"
+        status_bat = " "
+        status_unk = "??"
+        status_full = " Full"
+        path = "/sys/class/power_supply/BAT0/uevent"
+        low_threshold = 10
+}
+
+tztime local {
+        format = " %d-%m-%Y  %H:%M:%S"
+}
