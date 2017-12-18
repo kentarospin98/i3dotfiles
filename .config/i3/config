@@ -191,13 +191,13 @@ mode "mode_gaps" {
 	bindsym a gaps outer current minus 5
 }
 
-exec_always gaps inner current set 25
+gaps inner 25
 
 exec parcellite
 exec compton -f
 new_window pixel 0
 
-exec feh --bg-scale ~/Background/background.jpg
+exec feh --bg-scale ~/Background/background
 
 assign [class=Firefox] $work2
 assign [class=Nextcloud] $work4
@@ -209,6 +209,7 @@ exec_always alias off=sh ~/.scripts/shutdown.sh
 exec_always sh ~/.scripts/startup.sh
 exec xautolock -time 5 -locker 'sh ~/.scripts/startup.sh' 
 
+bindsym $mod+p exec scrot -d 0.5
 
 bindsym $mod+n exec xbacklight -dec 10
 bindsym $mod+m exec xbacklight -inc 10
@@ -220,3 +221,4 @@ bindsym $mod+b exec $browser
 #exec --no-startup-id i3-msg 'workspace $work3; exec qterminal -e calcurse -D ~/cloud/calcurse/'
 
 exec nextcloud
+exec dunst
