@@ -180,6 +180,19 @@ bar {
         }
 }
 
+bindsym $mod+Shift+g mode "mode_gaps"
+bindsym $mod+g gaps inner current set 0
+
+mode "mode_gaps" {
+	bindsym Return mode "default"
+	bindsym w gaps inner current plus 5
+	bindsym s gaps inner current minus 5
+	bindsym q gaps outer current plus 5
+	bindsym a gaps outer current minus 5
+}
+
+exec_always gaps inner current set 25
+
 exec parcellite
 exec compton -f
 new_window pixel 0
@@ -191,7 +204,11 @@ assign [class=Nextcloud] $work4
 assign [class=Steam] $work5
 assign [class=Thunderbird] $work6
 
-bindsym $mod+Shift+S exec systemctl suspend
+bindsym $mod+Shift+S exec sh ~/.scripts/suspend.sh
+exec_always alias off=sh ~/.scripts/shutdown.sh
+exec_always sh ~/.scripts/startup.sh
+exec xautolock -time 5 -locker 'sh ~/.scripts/startup.sh' 
+
 
 bindsym $mod+n exec xbacklight -dec 10
 bindsym $mod+m exec xbacklight -inc 10
