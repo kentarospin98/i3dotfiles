@@ -224,6 +224,5 @@ bindsym $mod+b exec $browser
 
 #exec --no-startup-id i3-msg 'workspace $work3; exec qterminal -e calcurse -D ~/cloud/calcurse/'
 
-exec nextcloud
 exec dunst
 exec keepassxc
