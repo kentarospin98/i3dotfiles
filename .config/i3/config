@@ -103,9 +103,9 @@ set $work4  Cloud
 set $work5  Steam
 set $work6  Email
 set $work7  Passwords
-set $work8  Files
-set $work9
-set $work10
+set $work8  Files
+set $work9  Extra 1
+set $work10  Extra 2
 
 # switch to workspace
 bindsym $mod+1 workspace $work1
@@ -208,7 +208,8 @@ assign [class=Firefox] $work2
 assign [class=Nextcloud] $work4
 assign [class=Steam] $work5
 assign [class=Thunderbird] $work6
-
+assign [class=keepassxc] $work7
+assign [class=Thunar] $work8
 
 bindsym $mod+Shift+S exec sh ~/.scripts/suspend.sh
 exec_always alias off=sh ~/.scripts/shutdown.sh
@@ -228,3 +229,4 @@ bindsym $mod+b exec $browser
 
 exec nextcloud
 exec dunst
+exec keepassxc
