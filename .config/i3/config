@@ -217,7 +217,7 @@ exec_always sh ~/.scripts/startup.sh
 exec xautolock -time 5 -locker 'sh ~/.scripts/startup.sh' 
 
 bindsym $mod+p exec scrot -d 0.5
-bindsym $mod+Shift+p exec scrot -s
+bindsym --release $mod+Shift+p exec scrot -s
 
 bindsym $mod+n exec xbacklight -dec 10
 bindsym $mod+m exec xbacklight -inc 10
