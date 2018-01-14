@@ -13,6 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
+
 font pango:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -172,14 +173,14 @@ bar {
         i3bar_command i3bar
         status_command i3status -c ~/.config/i3status/config 
 	colors {
-                background #002d77
-                statusline #00FFff
-                separator #666666
+                background #ce726d
+                statusline #f4d2d5
+                separator #f4d2d5
 
                 #                  Border  Backgr  Text
-                focused_workspace  #4c7899 #00ba9e #00263d
-                active_workspace   #333333 #5f676a #00263d
-                inactive_workspace #000f28 #000f28 #004c3a
+                focused_workspace  #ce726d #ce726d #f4d2d5
+                active_workspace   #804644 #804644 #00263d
+                inactive_workspace #804644 #804644 #7f6343
                 urgent_workspace   #ff0000 #900000 #ffffff
         }
 }
@@ -188,7 +189,7 @@ bindsym $mod+Shift+g mode "mode_gaps"
 bindsym $mod+g gaps inner current set 0
 
 mode "mode_gaps" {
-	bindsym Return mode "default"
+	bindsym Return mode "default"1
 	bindsym w gaps inner current plus 5
 	bindsym s gaps inner current minus 5
 	bindsym q gaps outer current plus 5
