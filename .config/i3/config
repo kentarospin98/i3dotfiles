@@ -30,7 +30,7 @@ font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-set $terminal qterminal
+set $terminal terminator
 set $browser firefox
 
 # start a terminal
@@ -189,7 +189,7 @@ bindsym $mod+Shift+g mode "mode_gaps"
 bindsym $mod+g gaps inner current set 0
 
 mode "mode_gaps" {
-	bindsym Return mode "default"1
+	bindsym Return mode "default"
 	bindsym w gaps inner current plus 5
 	bindsym s gaps inner current minus 5
 	bindsym q gaps outer current plus 5
