@@ -3,11 +3,13 @@
   broadcast_default = off
   focus = mouse
   homogeneous_tabbar = False
+  inactive_color_offset = 0.81679389313
   scroll_tabbar = True
   tab_position = hidden
   title_font = lucy tewi 9
   title_use_system_font = False
 [keybindings]
+  help = <Shift>F1
 [layouts]
   [[default]]
     [[[child1]]]
