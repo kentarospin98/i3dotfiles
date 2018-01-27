@@ -1,1 +1,1 @@
-mpv ~/.SystemSounds/Startup/$(ls ~/.SystemSounds/Startup | shuf -n 1)
+mpv --volume 60 ~/.SystemSounds/Startup/$(ls ~/.SystemSounds/Startup | shuf -n 1)
