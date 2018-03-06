@@ -87,7 +87,7 @@ bindsym $mod+a focus parent
 set $work1  Terminals
 set $work2  Browser
 set $work3  Calender
-set $work4  Cloud
+set $work4  Music
 set $work5  Steam
 set $work6  Email
 set $work7  Passwords
@@ -195,7 +195,6 @@ new_float pixel 0
 exec feh --bg-scale ~/Background/background
 
 assign [class=Firefox] $work2
-assign [class=Nextcloud] $work4
 assign [class=Steam] $work5
 assign [class=Thunderbird] $work6
 assign [class=keepassxc] $work7
