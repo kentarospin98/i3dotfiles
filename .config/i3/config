@@ -201,6 +201,7 @@ assign [class=keepassxc] $work7
 assign [class=Thunar] $work8
 
 bindsym $mod+Shift+S exec sh ~/.scripts/suspend.sh
+bindsym $mod+S exec ~/.scripts/lock.sh
 exec_always alias off=sh ~/.scripts/shutdown.sh
 exec_always sh ~/.scripts/startup.sh
 exec xautolock -time 20 -locker 'sh ~/.scripts/startup.sh' 
