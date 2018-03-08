@@ -68,7 +68,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -201,7 +201,7 @@ assign [class=keepassxc] $work7
 assign [class=Thunar] $work8
 
 bindsym $mod+Shift+S exec sh ~/.scripts/suspend.sh
-bindsym $mod+S exec ~/.scripts/lock.sh
+bindsym $mod+S exec sh ~/.scripts/lock.sh
 exec_always alias off=sh ~/.scripts/shutdown.sh
 exec_always sh ~/.scripts/startup.sh
 exec xautolock -time 20 -locker 'sh ~/.scripts/startup.sh' 
@@ -212,12 +212,12 @@ bindsym --release $mod+Shift+p exec scrot -s
 bindsym $mod+n exec xbacklight -dec 10
 bindsym $mod+m exec xbacklight -inc 10
 bindsym $mod+Shift+n exec pactl set-sink-volume 0 -10%
-bindsym $mod+SHift+m exec pactl set-sink-volume 0 +10%
+bindsym $mod+Shift+m exec pactl set-sink-volume 0 +10%
 
 bindsym $mod+j exec mpc pause
 bindsym $mod+k exec mpc play
 bindsym $mod+Shift+j exec mpc prev
-bindsym $mod+SHift+k exec mpc next
+bindsym $mod+Shift+k exec mpc next
 bindsym $mod+l exec mpc volume -5
 bindsym $mod+Shift+l exec mpc volume +5
 bindsym $mod+o exec mpc random
