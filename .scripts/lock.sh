@@ -1,1 +1,1 @@
-dm-tool lock
+i3lock
